@@ -48,7 +48,7 @@ public class Catalog {
     }
 
     public String toString(){
-        return "Catalog ID: " + catalogId + "Catalog Name: " + catalogName + "Description: " + description +"\n";
+        return "Catalog ID: " + catalogId + " Catalog Name: " + catalogName + " Description: " + description +"\n";
     }
 
     public int inputCatalogId(Scanner sc) {

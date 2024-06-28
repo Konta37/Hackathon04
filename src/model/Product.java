@@ -6,7 +6,7 @@ import service.ProductService;
 
 import java.util.Scanner;
 
-public class Product {
+public class Product implements Comparable<Product>{
     private String productId; //Pxxxx
     private String productName;
     private double productPrice;
@@ -211,4 +211,8 @@ public class Product {
         return true;
     }
 
+    @Override
+    public int compareTo(Product o) {
+        return Double.compare(o.productPrice,this.productPrice);
+    }
 }
